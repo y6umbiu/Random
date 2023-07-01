@@ -1,18 +1,13 @@
 <?php
 
 $variants = [
-    "Fortnite",
-    "Valorant (Fun)",
-    "M&B 2",
-    "Football Manager 2024"
+    "Fortnite"=>2,
+    "Valorant (Fun)"=>1,
+    "M&B 2"=>1,
+    "Football Manager 2024"=>1
 ];
 
 
-$randomIndex = rand(0, count($variants) - 1);
-
-
-$randomOutcome = $variants[$randomIndex];
-
-
-echo "Выбранный исход: " . $randomOutcome;
+$randomOutcome = array_rand($variants, 1);
+echo "Выбранный исход: $randomOutcome";
 ?>
